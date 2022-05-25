@@ -1,0 +1,12 @@
+auth.clients:
+  # Web site client
+  - client-id: webApp
+    client-secret: webApp
+  # Swagger and manual testing
+  - client-id: internal
+    client-secret: internalst1
+
+jwt:
+  secret:
+    access: wKpm8u8ZJAX7JZapN7p7CE7G3Q34Be2ZwuQQgWZsLcWy0IJNwGpU6yzX65GcRPEBbSHqkCfTAKAjIYl1NPbjnCijxidMaMsRdFnZrhQ+H3Nh2WbKtAqs3E7+MBk98hhJpS3eXArsjLiWqtD3aLuZYlnJeUqovjD+LdY6mpx4arsk9Wq7RgxEwdpS/FwsIQK79eNCzC/lZ9ACZyd0zFQBUYbzTZVK6xcUsEAg3Q==
+    refresh: rPVJm/QRLiHDKZ7qYeko/gaL/QWumCp8Tmk6YwPm8Bvxsb4jzy94f8ICiyu0DTSMtQfDh8STkTsYQUrv2QOjbwfaUmJys+koZQOASXLt67EWUBGJQUe7Xe73ZDzgh84V0qSgbebd1oAaK+0m1HfxihicwyG2QPz24J4tfCIR7pUKHuJGc9QdHb0N7rEsAc0IfR5XzV4qY8coFa3WVgm9eLK4cPdc/VB3FrntmA==

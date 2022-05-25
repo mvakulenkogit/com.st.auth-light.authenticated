@@ -1,0 +1,31 @@
+logging:
+  level:
+    com.st: debug
+
+spring:
+  application.name: auth-light.2
+
+server.port: 8081
+
+auth:
+  cookie.domain: ${AUTH_COOKIE_DOMAIN:localhost}
+  clients:
+    # Web site client
+    - client-id: webApp
+      client-secret: webApp
+      cookie:
+        name: gid
+        value: GA1.2.945037859.1632026763
+    # Swagger and manual testing
+    - client-id: internal
+      client-secret: internalst1
+
+password.encoder.secret.key: 4D74317333637572336E30747233616C
+
+jwt:
+  ttl:
+    access-ttl: 2592000  # 30 days: 30 * 24 * 60 * 60 = 2592000
+    refresh-ttl: 3110400
+  secret:
+    access: MTEyMDEwNGIxMDg2Y2Q2YWRhZTM2NGI3YTMwNDEwMjY1MzUxMzI5MWQ0YjAyYjE4MzQxY2VlZGQ1NDUyYmUyMTg1YmFkMTgxMTc4MmViNzQzZDcyN2I5OWM5YTJmNDYyMDg3OWM5YzY1ZDRkOGEzODcwZDkyYmVlOTNiOGUwNTg=
+    refresh: Ro23s94JJS2312aswemmMMsd23sdHJfs
